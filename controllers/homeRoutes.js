@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['id'],
         },
       ],
     });
@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
     const jobs = jobData.map((job) => job.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('/Users/daniellenasson/Job-Search/views/searchPage.handlebars', { 
       jobs, 
       logged_in: req.session.logged_in 
     });
@@ -33,7 +33,7 @@ router.get('/job/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['id'],
         },
       ],
     });

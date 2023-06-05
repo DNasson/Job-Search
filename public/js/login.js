@@ -15,7 +15,7 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/searchPage');
+        document.location.replace('/Users/daniellenasson/Job-Search/views/searchPage.handlebars');
       } else {
         alert(response.statusText);
       }
@@ -36,7 +36,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/searchPage');
+        document.location.replace('/Users/daniellenasson/Job-Search/views/searchPage.handlebars');
       } else {
         alert(response.statusText);
       }
