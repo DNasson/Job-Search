@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS hireMe_db;
+
+CREATE DATABASE hireMe_db;

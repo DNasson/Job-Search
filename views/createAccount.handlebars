@@ -1,0 +1,76 @@
+<html class="has-background-info-light">
+<head>
+  <title>hire.me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+</head>
+<body>
+  <header class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">
+            <h1 class="navbar-item title is-size-2 has-text-link">hire.me</h1>
+            <div class="navbar-burger burger" data-target="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Menu</a>
+                <div class="navbar-dropdown">
+                  <a href="#" class="navbar-item">Build your Resume</a>
+                  <a href="#" class="navbar-item">Check out some example portfolios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section has-background-info-light">
+    <div class="container">
+      <div class="columns is-mobile is-centered">
+        <div class="column is-one-third has-text-centered">
+          <h2 class="title has-text-centered ">Create an account</h2>
+          <p class="has-text-centered">Already have an account?</p>
+          <br>
+          <button class="button has-text-centered is-primary" href="#">Click Here</button>
+        </div>
+          <div class="field is-centered column is-two-third">
+            <div class="control is-centered">
+              <p class="is-size-4 has-text-centered">Email</p>
+              <input type="text" class="form-input" id="emailInput" placeholder="Please enter your email">
+            </div>
+            <div class="control is-center">
+              <p class="is-size-4 has-text-centered">Password</p>
+              <input type="text" class="form-input" id="passwordInput" placeholder="Please enter your password">
+              <br>
+              <br>
+                <div class="has-text-centered">
+                  <button class="button is-primary is-center signup-form">Create your login</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/login.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var burger = document.querySelector('.burger');
+      var navMenu = document.querySelector('#' + burger.dataset.target);
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        navMenu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
